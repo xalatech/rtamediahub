@@ -1,0 +1,87 @@
+.card-header {
+    background-color: rgba(0, 0, 0, .08);
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child {
+    flex: 1 0 32%;
+    margin: 5px;
+    min-height: 200px;
+}
+
+.homepagewidget h2 {
+    margin-top: 20px;
+    background: #222;
+    color: #fff;
+    font-weight: 300;
+    font-size: 120%;
+    display: inline-block;
+    padding: 5px 10px;
+    font-family: 'Roboto', sans-serif, helvetica;
+    text-transform: uppercase;
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-end li {
+    background: gold;
+}
+
+.center {
+    justify-content: center;
+}
+
+.center li {
+    background: deepskyblue;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-between li {
+    background: lightgreen;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-around li {
+    background: hotpink;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.space-evenly li {
+    background: #bada55;
+}
+
+.card-img-top {
+    max-height: 300px;
+    height: 300px;
+}
+
+.card-title {
+    font-weight: bold;
+    color: black;
+}

@@ -1,0 +1,39 @@
+{% extends "mediahub/base_generic.html" %}
+{% block content %}
+    <!-- Main content -->
+          <section class="col-lg-12 connectedSortable">
+             <form method="post" novalidate enctype="multipart/form-data">
+            <div class="card">
+              <div class="card-body">
+              {% if successMessage %}
+              <p class="alert alert-success">{{successMessage}}</p>
+              {% endif %}
+              {% load crispy_forms_tags %}
+              {% block postform %}
+             
+                  {% csrf_token %}
+                  {{ form|crispy }}
+                 
+              
+              {% endblock %}
+              </div><!-- /.card-body -->
+              <div class="card-footer">
+               <div class="flex-container center">
+               <button type="submit" class="btn btn-success col-lg-3">Save Post</button>
+                <a href="/" type="button" class="btn btn-default ml-3 col-lg-3">Cancel</a>
+
+               </div>
+              </div>
+            </div>
+              </form>
+          </section>
+
+            <script type="text/javascript">
+document.getElementById("id_headline").onkeyup = function() {
+    var e = document.getElementById("id_slug");
+    if (!e._changed) { e.value = URLify(document.getElementById("id_headline").value, 50); }
+}
+</script>
+    {% endblock %}
+
+  

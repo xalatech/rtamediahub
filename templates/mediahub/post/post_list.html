@@ -1,0 +1,12 @@
+{% for post in posts %}
+  <div class="card child">
+    <img class="card-img-top" src="{{post.thumb}}" alt="{{post.headline}}">
+    <div class="card-body">
+      <a class="card-title" href="/post/{{post.slug}}">{{post.headline}}</a>
+      <p class="card-text">{{post.description | safe}}</p>
+      <p class="card-text">{{post.tags}}</p>
+      <p class="card-text">{{post.createdOn}}</p>
+      <a href="/post/{{post.slug}}" class="btn btn-default btn-sm">Read more</a>
+    </div>
+  </div>
+{% endfor %}

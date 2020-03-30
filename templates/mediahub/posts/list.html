@@ -1,0 +1,9 @@
+{% extends "mediahub/base_generic.html" %}
+  {% load static %}
+
+{% block content %}
+  {% for post in posts %}
+    <p>{{post}}</p>
+    <img src="media/{{post.upload}}" alt="" />{{post}}</p>
+{% endfor %}
+  {% endblock %}
