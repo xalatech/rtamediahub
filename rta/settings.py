@@ -27,7 +27,7 @@ SECRET_KEY = 'i)81s%milj*j=u#tp^kbb(5rz8c+%q+y7soq5y_pz)3c8pxk#i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['rta.af', '127.0.0.1']
+ALLOWED_HOSTS = ['rta.af', '127.0.0.1', 'salty-springs-97750.herokuapp.com']
 
 
 # Application definition
