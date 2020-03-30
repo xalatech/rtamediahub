@@ -1,24 +1,12 @@
 import random
-from datetime import datetime, date
+from datetime import datetime
 
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
-from django.views.generic import TemplateView, FormView, ListView
 from moviepy import editor
-from rest_framework import viewsets
-from rest_framework.authentication import TokenAuthentication
 
-from .filters import PostFilter
 from .forms import PostForm
 from .models import *
-# api
-from .serializers import PostSerializer
-
-
-class PostViewSet(viewsets.ModelViewSet):
-    serializer_class = PostSerializer
-    queryset = Post.objects.all()
-    authentication_classes = (TokenAuthentication,)
 
 
 @login_required(redirect_field_name='accounts/login')

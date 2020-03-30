@@ -1,9 +1,8 @@
-from django.db import models
-from django.contrib.auth.models import User
-from django.contrib import admin
-from django.db.models import Count, Case, When, IntegerField
-from rta import settings
 import os
+
+from django.contrib.auth.models import User
+from django.db import models
+
 from .validators import validate_file_extension
 
 
