@@ -86,11 +86,19 @@ WSGI_APPLICATION = 'rta.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+     'default': {
+         'ENGINE': 'django.db.backends.mysql',
+         'OPTIONS': {
+             'sql_mode': 'traditional',
+         },
+         'NAME': 'rtaaff2_mediahub',
+         'USER': 'rtaaff2_mediahub',
+         'PASSWORD': 'rta@2020',
+         'HOST': '107.161.181.194',
+         'PORT': '3306',
+     }
+ }
+
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
@@ -140,7 +148,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-SECURE_HSTS_SECONDS = 31536000
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
