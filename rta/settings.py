@@ -141,14 +141,6 @@ USE_L10N = True
 USE_TZ = True
 
 SECURE_HSTS_SECONDS = 31536000
-SECURE_CONTENT_TYPE_NOSNIFF = True
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-SECURE_HSTS_PRELOAD = True
-
-SECURE_REFERRER_POLICY = ['origin']
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
