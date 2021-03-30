@@ -14,7 +14,7 @@ decorator==4.4.2
 deployer==0.3.10
 dj-config-url==0.1.1
 dj-database-url==0.5.0
-Django==3.0.4
+Django==3.0.12
 django-crispy-forms==1.9.0
 django-debug-toolbar==2.2
 django-excel-base==1.0.3
